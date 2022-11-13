@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      
+        <!-- ===============================================-->
+        <!--    Document Title-->
+        <!-- ===============================================-->
+        <title>Livedoc | Landing, Responsive &amp; Business Templatee</title>
+      
+      
+        <!-- ===============================================-->
+        <!--    Favicons-->
+        <!-- ===============================================-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+        <link rel="manifest" href="assets/img/favicons/manifest.json">
+        <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+        
+        <!-- ===============================================-->
+        <!--    Stylesheets-->
+        <!-- ===============================================-->
+        <link href="assets/css/theme.css" rel="stylesheet" />
+        <style>
+          .bg-secondary {
+            background-color: #db8c7d !important;
+          }
+          .font-faj{
+            font-family: 'Fjalla One', sans-serif;
+          }
+          .font-rob{
+            font-family: 'Roboto', sans-serif;
+          }
+        </style>
+<link rel="stylesheet" href="test.css">
+
+      
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    
+</head>
+
+
+<body class="bg-secondary">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 d-block"
+      data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container"><a class="navbar-brand" href="index.html"><img src="assets/img/gallery/logo.png"
+            width="118" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"> </span></button>
+        <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+            <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="test.html">Free Test</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="consult.html">Consult</a></li>
+            <li class="nav-item px-2"><a class="nav-link" href="index.html#about">Blogs </a></li>
+            <!-- <li class="nav-item px-2"><a class="nav-link" href="#findUs">Products</a></li> -->
+          </ul>
+          <!-- <a class="btn btn-sm btn-outline-primary rounded-pill order-1 order-lg-0 ms-lg-4" href="#!">Sign In</a> -->
+        </div>
+      </div>
+    </nav>
+    <div class="question-style m-y-5 bg-secondary font-faj p-5" >
+        <div id="question">
+            <h3><div class="question-content text-center text-white fw-bold text-light mb-4 mt-4 mt-lg-0">
+                How frequently have you faced this issue?
+            </div></h3>
+            <div class="question-options text-white justify-content-center">
+                <input type="radio" id="never" name="occurance" value="never">
+                <label for="never"><h5 class="text-white font-rob ">Never</h5></label><br>
+                <input type="radio" id="someTime" name="occurance" value="someTime">
+                <label for="someTime"><h5 class="text-white font-rob">Sometime</h5></label><br>
+                <input type="radio" id="often" name="occurance" value="often">
+                <label for="often"><h5 class="text-white font-rob">Often</h5></label>
+            </div>
+        </div>
+
+    
+    <div class="navigation-buttons justify-content-center">
+        <button class="btn test-button btn-lg btn-primary rounded-pill" id="prev">Previous</button>
+        <button class="btn test-button btn-lg btn-primary rounded-pill" id="next">Next</button>
+    </div>
+
+    <h2 class="quick text-black text-center m-t-5">Quick Suggestions</h2>
+    <div class="quick quick-suggestion  text-black"></div>  
+    <!-- <form  id="form">
+        
+        <br>
+        <input style="display: none;"type="text" id="user-name" placeholder="Enter Your Name">
+        <br>
+        <textarea style="display: none;" id="user-suggestion" placeholder="enter ur remedy here" rows="4" cols="50"></textarea>
+        <br>
+        <button style="display: none;" class="btn btn-lg btn-light rounded-pill" type="submit">Post</button>
+    </form>
+        
+    
+    
+    
+    <div style="display: none;" class="discussion">
+        <div class="user-remedies">
+            
+        </div>
+    </div> -->
+    <h2 id="hReport" class="quick text-black text-center">Your report</h2>
+    <ul class="suggestions text-black"></ul>
+    <button class="btn test-button btn-lg btn-primary rounded-pill"  id="consultDoc"><a href="consult.html">Consult a Doctor</a></button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    const data=[
+{
+    Q:"Do you use douching of the vagina?   ",
+    A:0,
+    S:"You should know that the vagina is self-cleaning. It is best to let your vagina clean itself naturally by making mucus, which washes away blood, semen, and vaginal discharge. Otherwise the self-cleaning mechanism of the vagina and its microbiota will be impaired.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you often wash your vulva (more than twice a day for example)?",
+    A:0,
+    S:"Be careful, too much hygiene (especially when using classic soap instead of adapted product for intimate hygiene) is as harmful as poor hygiene. One external wash per day, a maximum of two is sufficient.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you wipe after miction / defecation from back to front?",
+    A:0,
+    S:"Be careful, the right way to clean the vulva is from front to back (the vulva to the anus) and not the other way. If you do it the other way, then the chances of dragging the harmful bacteria to the vulva and the vagina are high.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you use aromatic soap, vaginal deodorant or scented wipes for intimate hygiene?",
+    A:0,
+    S:"You should avoid these products, they can affect the healthy balance of microbiota and pH levels in your vagina and cause irritation. In the event of a pathological odor, these products will only cover up the odor for a short time without solving the problem. See your doctor if you have a vaginal discharge that smells bad.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you use tampons and sanitary pads without menses?",
+    A:0,
+    S:"Be careful, these products absorb moisture, therefore natural secretions. They may cause irritations and dryness of your mucosa and modify the composition of your microbiota which is needed for normal protection against infections.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you smoke?",
+    A:0,
+    S:"Cigarette smoking is associated with a vaginal microbiota lacking protective bacteria (Lactobacilli). It damages mucosa and local and systemic immune responses. It is strongly associated with an elevated risk of bacterial vaginosis.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you have diabetes?",
+    A:0,
+    S:"Diabetes predisposes individuals to bacterial and fungal infections because it interacts with the immune response. Maintaining healthy vaginal microbiota may play an important role in restricting yeast infections.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you take medications like glucocorticoids?",
+    A:0,
+    S:"These medications diminish your immune response and defense possibilities against infections.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Did you take antibiotics during the last weeks?",
+    A:0,
+    S:"Take antibiotics only when needed, because they can kill “good” bacteria in your vagina, modify your microbiota and generate a vaginal microbiota imbalance and vulvovaginal candidiasis.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Did you have sex with a new partner?",
+    A:0,
+    S:"Remember that you need to use condoms with a new partner or get tested for Sexual Transmitted Infections (STIs). But even in the absence of an STI, intercourse with a new partner or several partners increases the risk of vaginal microbiota imbalance and bacterial vaginosis.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you often have vaginal infections?",
+    A:0,
+    S:"Normally, treatment is effective but recurrence rates of 15–30% within 3 months exist. In a long‐term follow‐up of women who had been successfully treated, 52% had at least one further episode. Only your doctor will be able to select your appropriate treatment.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Do you often use a vaginal over-the-counter medication against yeast infection?",
+    A:0,
+    S:"You may be convinced that it is not necessary to see your doctor every time and it seems easier for you to buy an over-the-counter medication but there is a risk that the treatment will not be suitable.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Did you experience a strong odor or an unusual discharge?",
+    A:0,
+    S:"If you experience a change in color or it starts to smell or itch, it can be a sign of a vaginal infection or a sexually transmitted infection. In any case, avoid self-medication and see your doctor as you might have an infection needing medical management.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Did you experience swelling, itching, or burning in and around your vagina several times?",
+    A:0,
+    S:"If you experience such trouble as swelling, itching, or burning in and around the vagina, this can be caused by an infection. It is necessary to avoid self-medication and to see a doctor for the right diagnosis and start treatment.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+{
+    Q:"Did you experience pain during or after sex?",
+    A:0,
+    S:"Get advice from your doctor if you have pain during or after sex. He will try to find the cause of your problem and be able to tell you whether you need any treatment. For example, vaginal infection or vaginal dryness, often occurring after menopause, can cause pain during intercourse.",
+    D:[{
+        uName: '',
+        post: 'I think.......'
+    }]
+},
+];
+
+let curIndex=0;
+document.querySelector("#hReport").innerText='';
+const submitHandler=()=>{
+//all the ans are submited
+// window.alert("form submited");
+document.querySelector("#hReport").innerText='Your Report';
+// document.querySelectorAll(".quick").forEach(e=>{
+//     e.style.display='none';
+// })
+console.log(data);
+data.forEach(item => {
+    if(item.A==="often"|| item.A==="someTime"){
+        const s=document.createElement("li");
+        s.innerText=item.S;
+        document.querySelector(".suggestions").appendChild(s);
+    }
+
+    
+});
+};
+
+document.querySelector(".question-content").innerText=data[curIndex].Q;
+
+
+
+
+
+
+document.querySelector("#next").addEventListener('click',()=>{
+console.log(data[curIndex]);
+
+document.querySelector('#never').checked=false;
+document.querySelector('#often').checked=false;
+document.querySelector('#someTime').checked=false;
+document.querySelector(".quick-suggestion").innerText="";
+
+
+if(curIndex===data.length-1){
+    submitHandler();
+}
+if(curIndex===data.length-2){
+    document.querySelector("#next").innerText="submit";
+}
+curIndex++;
+document.querySelector(".question-content").innerText=data[curIndex].Q;
+// displayDiscussion();
+if(data[curIndex].A==0||data[curIndex].A=="never"){
+document.querySelector(".quick-suggestion").innerText="";
+}
+else{
+document.querySelector(".quick-suggestion").innerText=data[curIndex].S;
+}
+
+if(data[curIndex].A==="never"){
+    document.querySelector("#never").checked=true;
+}
+if(data[curIndex].A==="often"){
+    document.querySelector("#often").checked=true;
+
+}
+if(data[curIndex].A==="someTime"){
+    document.querySelector("#someTime").checked=true;
+}
+
+
+
+});
+
+
+
+
+
+document.querySelector("#prev").addEventListener('click',()=>{
+
+document.querySelector('#never').checked=false;
+document.querySelector('#often').checked=false;
+document.querySelector('#someTime').checked=false;
+console.log(data[curIndex]);
+
+if(curIndex===data.length-1){
+    document.querySelector("#next").innerText="next";
+}
+curIndex--;
+document.querySelector(".question-content").innerText=data[curIndex].Q;
+// displayDiscussion();
+if(data[curIndex].A==0||data[curIndex].A=="never"){
+document.querySelector(".quick-suggestion").innerText="";
+}
+else{
+document.querySelector(".quick-suggestion").innerText=data[curIndex].S;
+}
+
+if(data[curIndex].A==="never"){
+    document.querySelector("#never").checked=true;
+}
+if(data[curIndex].A==="often"){
+    document.querySelector("#often").checked=true;
+
+}
+if(data[curIndex].A==="someTime"){
+    document.querySelector("#someTime").checked=true;
+}
+});
+
+document.querySelector("#never").addEventListener('click',(event)=>{
+data[curIndex].A=event.target.value;
+
+})
+document.querySelector("#someTime").addEventListener('click',(event)=>{
+data[curIndex].A=event.target.value;
+document.querySelector(".quick-suggestion").innerText=data[curIndex].S;
+})
+document.querySelector("#often").addEventListener('click',(event)=>{
+data[curIndex].A=event.target.value;
+document.querySelector(".quick-suggestion").innerText=data[curIndex].S;
+})
+
+// document.querySelector("#form").addEventListener('submit',(event)=>{
+// event.preventDefault();
+
+// const userName =document.querySelector("#user-name").value;
+// const ramedy =document.querySelector("#user-suggestion").value;
+// data[curIndex].D.push({uName:userName, post:ramedy})
+// console.log(data);
+// // displayDiscussion();
+// });
+
+
+
+// const displayDiscussion=()=>{
+// document.querySelector(".user-remedies").innerHTML="";
+// const discussion=data[curIndex].D;
+// discussion.forEach(item=>{
+// const temp=document.createElement("div");
+// temp.classList.add("remedy-item");
+// temp.innerText=`${item.post} \n ${item.uName}`;
+// document.querySelector(".user-remedies").appendChild(temp);
+// })
+// return;
+// };
+// displayDiscussion();
+
+</script>
+<script src="vendors/@popperjs/popper.min.js"></script>
+<script src="vendors/bootstrap/bootstrap.min.js"></script>
+<script src="vendors/is/is.min.js"></script>
+<script src="https://scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="vendors/fontawesome/all.min.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&amp;display=swap"
+  rel="stylesheet">
+</body>
+
+</html>

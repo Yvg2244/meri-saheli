@@ -1,0 +1,9 @@
+@media screen and (max-width:435px) {
+ .test-button{
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+ }   
+ .quick{
+    margin-top: 15px;
+ }
+}
